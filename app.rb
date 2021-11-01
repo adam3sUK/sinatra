@@ -24,9 +24,11 @@ get '/services' do
 end
 
 get '/cat' do
+    @name_generator = ["Amigo", "Misty", "Almond"].sample
     erb(:index)
 end 
 
 get '/contact-us' do
   "We'll contact you"
 end
+
