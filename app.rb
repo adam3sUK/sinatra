@@ -23,10 +23,20 @@ get '/services' do
   </ul>"
 end
 
-get '/cat' do
-    @name_generator = ["Amigo", "Misty", "Almond"].sample
-    erb(:index)
-end 
+get '/random-cat' do
+  @name = ["Amigo", "Misty", "Almond"].sample
+  erb(:index)
+end
+
+post '/named-cat' do
+  p params
+  @name = params[:name]
+  erb(:index)
+end
+
+get '/form' do
+  erb(:form)
+end
 
 get '/contact-us' do
   "We'll contact you"
