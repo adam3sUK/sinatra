@@ -14,6 +14,22 @@ get '/about' do
   "This is the page for secrets"
 end
 
+get '/services' do
+  "<h1>Secret services</h1>
+  <p>We have lots of secret services</p>
+  <ul>
+  <li>Like a service we can't speak about</li>
+  <li>And another</li>
+  </ul>"
+end
+
+get '/cat' do
+  "<div>
+    <img src='https://i.imgur.com/jFaSxym.png' style='border: 8px double red; max-height: 400px;'>
+  </div>
+  "
+end
+
 get '/contact-us' do
   "We'll contact you"
 end
