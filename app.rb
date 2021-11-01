@@ -24,11 +24,8 @@ get '/services' do
 end
 
 get '/cat' do
-  "<div>
-    <img src='https://i.imgur.com/jFaSxym.png' style='border: 8px double red; max-height: 400px;'>
-  </div>
-  "
-end
+    erb(:index)
+end 
 
 get '/contact-us' do
   "We'll contact you"
